@@ -1,0 +1,145 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.bloc{
+  background-color: #f5f1eb;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 1px 100px 30px rgba(0,0,0,.1);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align:center;
+  background-color: #e9e2d3;
+}
+
+
+h1 {
+  color: #39393a;
+  background-color: #8da1b9;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 5px;
+  width: 75%;
+  animation: changeColor 1s infinite;
+
+}
+
+h2 {
+  color: #39393a;
+  background-color: #8da1b9;
+  margin: 5px auto;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+
+ul {
+  padding: 0;
+}
+
+.button{
+  background-color: #cf4532;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f6f4f2;
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background: green;
+}
+
+
+
+.icon{
+  display:inline;
+  font-size: 40px;
+  margin-left: 3px;
+}
+
+.img{
+  margin-top: 10px;
+  width: 60px;
+  border-radius: 50%;
+  animation: changeRotate 1s infinite;
+}
+
+.fab:hover, .fas:hover{
+  color:green;
+}
+
+#span1 {
+  animation: changeColor1 1s infinite;
+}
+
+#span2 {
+  animation: changeColor2 1s infinite;
+}
+
+#span3 {
+  animation: changeColor3 1s infinite;
+}
+
+
+@keyframes changeRotate {
+  0%   {
+    transform: rotate(0deg);
+    transform: translateX(0%);
+  }
+  25%  {
+    transform: rotate(180deg);
+    transform: translateX(50%);
+  }
+  50%  {
+    transform: rotate(0deg);
+    transform: translateX(0%);
+  }
+  100%  {
+    transform: rotate(180deg);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes changeColor1 {
+  0%   { color: blue; }
+  50%   { color: pink; }
+  100%   { color: green; }
+}
+
+@keyframes changeColor2 {
+  0%   { color: green; }
+  50%   { color: blue; }
+  100%   { color: yellow; }
+}
+
+@keyframes changeColor3 {
+  0%   { color: yellow; }
+  50%   { color: green; }
+  100%   { color: orange; }
+}
+
+
+
+
